@@ -4,7 +4,7 @@ import { auth } from './services/firebase';
 import { signIn, signUp, logOut } from './services/authService';
 import { addExpense, getExpenses } from './services/expenseService';
 import { createGroup, getGroups } from './services/groupService';
-import './App.css';
+
 
 export default function App() {
   const [user, setUser] = useState(null);
