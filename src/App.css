@@ -1,0 +1,224 @@
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f9ff;
+  color: #1f2937;
+}
+
+/* ================= AUTH ================= */
+.auth-box {
+  width: 380px;
+  margin: 120px auto;
+  padding: 36px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(25, 118, 210, 0.15);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 24px;
+  color: #1976d2;
+  font-weight: 700;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #cfd8dc;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25,118,210,0.15);
+}
+
+/* ================= BUTTONS ================= */
+button {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 16px rgba(25,118,210,0.35);
+}
+
+button:hover {
+  background: #1565c0;
+  box-shadow: 0 8px 22px rgba(25,118,210,0.45);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(25,118,210,0.3);
+}
+
+.secondary {
+  background: white;
+  color: #1976d2;
+  border: 1px solid #cfd8dc;
+  box-shadow: none;
+}
+
+.secondary:hover {
+  background: #e3f2fd;
+}
+
+/* ================= LINKS ================= */
+.link {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: white;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e3f2fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 22px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1976d2;
+}
+
+header span {
+  font-size: 14px;
+  color: #607d8b;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #607d8b;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.card.red h3 {
+  color: #d32f2f;
+}
+
+.card.green h3 {
+  color: #2e7d32;
+}
+
+/* ================= TABS ================= */
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.tabs button {
+  background: #e3f2fd;
+  color: #1565c0;
+  box-shadow: none;
+}
+
+.tabs .active {
+  background: #1976d2;
+  color: white;
+  box-shadow: 0 6px 16px rgba(25,118,210,0.4);
+}
+
+/* ================= FORMS ================= */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #cfd8dc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25,118,210,0.15);
+}
+
+/* ================= LIST ================= */
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.row strong {
+  font-size: 15px;
+}
+
+.row p {
+  font-size: 13px;
+  color: #607d8b;
+}
+
+/* ================= CENTER ================= */
+.center {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 16px;
+}
